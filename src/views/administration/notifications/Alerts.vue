@@ -219,12 +219,31 @@ export default {
                           <div class="list-group-item"><b-form-checkbox value="USER_DELETED">USER_DELETED</b-form-checkbox></div>
                         </b-form-checkbox-group>
                       </div>
+                    <div>
+                      Notifies: {{ notifyOn }}
+                    </div>
                     </b-form-group>
                     <div style="text-align:right">
                       <b-button variant="outline-primary" @click="testNotification">{{ $t('admin.perform_test') }}</b-button>
                       <b-toggleable-display-button variant="outline-primary" :label="$t('admin.limit_to')"
                                 v-permission="PERMISSIONS.VIEW_PORTFOLIO" v-on:toggle="limitToVisible = !limitToVisible"
                                 v-if="this.scope === 'PORTFOLIO'" />
+                      <div style="text-align:left">
+                        <b-form-group id="fieldset-7" :label="this.$t('Severities')" label-for="input-7">
+                          <div class="list-group" v-if="this.scope === 'PORTFOLIO' ">
+                            <b-form-checkbox-group id="checkbox-group-severities" v-model="severities">
+                              <div class="list-group-item"><b-form-checkbox value="Severity.LOW">LOW_SEVERITY</b-form-checkbox></div>
+                              <div class="list-group-item"><b-form-checkbox value="Severity.MEDIUM">MEDIUM_SEVERITY</b-form-checkbox></div>
+                              <div class="list-group-item"><b-form-checkbox value="Severity.HIGH">HIGH_SEVERITY</b-form-checkbox></div>
+                              <div class="list-group-item"><b-form-checkbox value="Severity.CRITICAL">CRITICAL_SEVERITY</b-form-checkbox></div>
+                              <div class="list-group-item"><b-form-checkbox value="Severity.UNASSIGNED">UNASSIGNED_SEVERITY</b-form-checkbox></div>
+                            </b-form-checkbox-group>
+                          </div>
+                        </b-form-group>
+                        <div>
+                          Checked severities: {{ severities }}
+                        </div>
+                      </div>
                        <b-button variant="outline-danger" @click="deleteNotificationRule">{{ $t('admin.delete_alert') }}</b-button>
                        <b-button variant="primary" @click="updateNotificationRule">{{ $t('admin.submit') }}</b-button>
                     </div>
@@ -263,6 +282,7 @@ export default {
                 projects: row.projects,
                 teams: row.teams,
                 limitToVisible: false,
+                severities: [],
                 tag: '', // The contents of a tag as its being typed into the vue-tag-input
                 tags: [], // An array of tags bound to the vue-tag-input
                 tagsAutoCompleteItems: [],
