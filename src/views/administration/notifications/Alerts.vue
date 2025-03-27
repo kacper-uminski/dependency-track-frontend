@@ -229,9 +229,9 @@ export default {
                                 v-permission="PERMISSIONS.VIEW_PORTFOLIO" v-on:toggle="limitToVisible = !limitToVisible"
                                 v-if="this.scope === 'PORTFOLIO'" />
                       <div style="text-align:left">
-                        <b-form-group id="fieldset-7" :label="this.$t('Severities')" label-for="input-7">
+                        <b-form-group id="fieldset-7" :label="this.$t('admin.notifySeverities')" label-for="input-7">
                           <div class="list-group" v-if="this.scope === 'PORTFOLIO' ">
-                            <b-form-checkbox-group id="checkbox-group-severities" v-model="severities">
+                            <b-form-checkbox-group id="checkbox-group-severities" v-model="notifySeverities">
                               <div class="list-group-item"><b-form-checkbox value="Severity.LOW">LOW_SEVERITY</b-form-checkbox></div>
                               <div class="list-group-item"><b-form-checkbox value="Severity.MEDIUM">MEDIUM_SEVERITY</b-form-checkbox></div>
                               <div class="list-group-item"><b-form-checkbox value="Severity.HIGH">HIGH_SEVERITY</b-form-checkbox></div>
@@ -241,7 +241,7 @@ export default {
                           </div>
                         </b-form-group>
                         <div>
-                          Checked severities: {{ severities }}
+                          Checked severities: {{ notifySeverities }}
                         </div>
                       </div>
                        <b-button variant="outline-danger" @click="deleteNotificationRule">{{ $t('admin.delete_alert') }}</b-button>
@@ -279,10 +279,10 @@ export default {
                 jiraTicketType: this.parseJiraTicketType(row),
                 scope: row.scope,
                 notifyOn: row.notifyOn,
+                notifySeverities: row.notifySeverities,
                 projects: row.projects,
                 teams: row.teams,
                 limitToVisible: false,
-                severities: [],
                 tag: '', // The contents of a tag as its being typed into the vue-tag-input
                 tags: [], // An array of tags bound to the vue-tag-input
                 tagsAutoCompleteItems: [],
@@ -394,6 +394,7 @@ export default {
                       tokenHeader: this.tokenHeader,
                     }),
                     notifyOn: this.notifyOn,
+                    notifySeverities: this.notifySeverities,
                     tags: this.tags.map((tag) => {
                       return { name: tag.text };
                     }),
