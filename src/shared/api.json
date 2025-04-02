@@ -44,7 +44,6 @@
   "URL_REPOSITORY": "api/v1/repository",
   "URL_SEARCH": "api/v1/search",
   "URL_SERVICE": "api/v1/service",
-  "URL_SEVERITY": "api/v1/severity",
   "URL_TAG": "api/v1/tag",
   "URL_TEAM": "api/v1/team",
   "URL_USER": "api/v1/user",

@@ -222,12 +222,6 @@ export default {
                     <div>
                       Notifies: {{ notifyOn }}
                     </div>
-                    </b-form-group>
-                    <div style="text-align:right">
-                      <b-button variant="outline-primary" @click="testNotification">{{ $t('admin.perform_test') }}</b-button>
-                      <b-toggleable-display-button variant="outline-primary" :label="$t('admin.limit_to')"
-                                v-permission="PERMISSIONS.VIEW_PORTFOLIO" v-on:toggle="limitToVisible = !limitToVisible"
-                                v-if="this.scope === 'PORTFOLIO'" />
                       <div style="text-align:left">
                         <b-form-group id="fieldset-7" :label="this.$t('admin.notifySeverities')" label-for="input-7">
                           <div class="list-group" v-if="this.scope === 'PORTFOLIO' ">
@@ -236,6 +230,7 @@ export default {
                               <div class="list-group-item"><b-form-checkbox value="Severity.MEDIUM">MEDIUM_SEVERITY</b-form-checkbox></div>
                               <div class="list-group-item"><b-form-checkbox value="Severity.HIGH">HIGH_SEVERITY</b-form-checkbox></div>
                               <div class="list-group-item"><b-form-checkbox value="Severity.CRITICAL">CRITICAL_SEVERITY</b-form-checkbox></div>
+                              <div class="list-group-item"><b-form-checkbox value="Severity.INFO">INFO_SEVERITY</b-form-checkbox></div>
                               <div class="list-group-item"><b-form-checkbox value="Severity.UNASSIGNED">UNASSIGNED_SEVERITY</b-form-checkbox></div>
                             </b-form-checkbox-group>
                           </div>
@@ -244,6 +239,12 @@ export default {
                           Checked severities: {{ notifySeverities }}
                         </div>
                       </div>
+                    </b-form-group>
+                    <div style="text-align:right">
+                      <b-button variant="outline-primary" @click="testNotification">{{ $t('admin.perform_test') }}</b-button>
+                      <b-toggleable-display-button variant="outline-primary" :label="$t('admin.limit_to')"
+                                v-permission="PERMISSIONS.VIEW_PORTFOLIO" v-on:toggle="limitToVisible = !limitToVisible"
+                                v-if="this.scope === 'PORTFOLIO'" />
                        <b-button variant="outline-danger" @click="deleteNotificationRule">{{ $t('admin.delete_alert') }}</b-button>
                        <b-button variant="primary" @click="updateNotificationRule">{{ $t('admin.submit') }}</b-button>
                     </div>
