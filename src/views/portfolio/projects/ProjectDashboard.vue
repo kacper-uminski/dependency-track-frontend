@@ -15,6 +15,10 @@
               <td>{{ $t('message.last_vulnerability_analysis') }}:</td>
               <td>{{ lastVulnAnalysis }}</td>
             </tr>
+              <td>{{ $t('message.time_bom_generated') }}:</td>
+              <td>{{ timeBomGenerated }}</td>
+            </tr>
+            <tr>
             <tr>
               <td>{{ $t('message.last_measurement') }}:</td>
               <td>
@@ -232,6 +236,7 @@ export default {
       suppressed: 0,
       lastMeasurement: 'n/a',
       lastBomImport: 'n/a',
+      timeBomGenerated: 'n/a',
       lastVulnAnalysis: 'n/a',
     };
   },
@@ -301,6 +306,12 @@ export default {
         );
       } else {
         this.lastBomImport = 'n/a';
+      }
+
+      if (newProject && newProject.bomTimestamp !== undefined) {
+          this.timeBomGenerated = common.formatTimestamp(newProject.bomTimestamp, true);
+      } else {
+          this.timeBomGenerated = 'n/a';
       }
 
       if (newProject && newProject.lastVulnerabilityAnalysis) {

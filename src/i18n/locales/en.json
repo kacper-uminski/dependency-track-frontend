@@ -561,6 +561,7 @@
     "include_acl": "Include access control list",
     "include_audit_history": "Include audit history",
     "include_components": "Include components",
+    "time_bom_generated": "BOM Generated",
     "include_policy_violations": "Include Policy Violations",
     "include_properties": "Include properties",
     "include_services": "Include services",
