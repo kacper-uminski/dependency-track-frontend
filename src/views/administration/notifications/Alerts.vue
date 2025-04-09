@@ -223,7 +223,7 @@ export default {
                       Notifies: {{ notifyOn }}
                     </div>
                       <div style="text-align:left">
-                        <b-form-group id="fieldset-7" :label="this.$t('admin.notifySeverities')" label-for="input-7">
+                        <b-form-group id="fieldset-7" :label="this.$t('NOTIFY_SEVERITIES')" label-for="input-7">
                           <div class="list-group" v-if="this.scope === 'PORTFOLIO' ">
                             <b-form-checkbox-group id="checkbox-group-severities" v-model="notifySeverities">
                               <div class="list-group-item"><b-form-checkbox value="Severity.LOW">LOW_SEVERITY</b-form-checkbox></div>
