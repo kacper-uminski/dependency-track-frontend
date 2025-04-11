@@ -226,12 +226,12 @@ export default {
                         <b-form-group id="fieldset-7" :label="this.$t('NOTIFY_SEVERITIES')" label-for="input-7">
                           <div class="list-group" v-if="this.scope === 'PORTFOLIO' ">
                             <b-form-checkbox-group id="checkbox-group-severities" v-model="notifySeverities">
-                              <div class="list-group-item"><b-form-checkbox value="Severity.LOW">LOW_SEVERITY</b-form-checkbox></div>
-                              <div class="list-group-item"><b-form-checkbox value="Severity.MEDIUM">MEDIUM_SEVERITY</b-form-checkbox></div>
-                              <div class="list-group-item"><b-form-checkbox value="Severity.HIGH">HIGH_SEVERITY</b-form-checkbox></div>
-                              <div class="list-group-item"><b-form-checkbox value="Severity.CRITICAL">CRITICAL_SEVERITY</b-form-checkbox></div>
-                              <div class="list-group-item"><b-form-checkbox value="Severity.INFO">INFO_SEVERITY</b-form-checkbox></div>
-                              <div class="list-group-item"><b-form-checkbox value="Severity.UNASSIGNED">UNASSIGNED_SEVERITY</b-form-checkbox></div>
+                              <div class="list-group-item"><b-form-checkbox value="LOW">LOW_SEVERITY</b-form-checkbox></div>
+                              <div class="list-group-item"><b-form-checkbox value="MEDIUM">MEDIUM_SEVERITY</b-form-checkbox></div>
+                              <div class="list-group-item"><b-form-checkbox value="HIGH">HIGH_SEVERITY</b-form-checkbox></div>
+                              <div class="list-group-item"><b-form-checkbox value="CRITICAL">CRITICAL_SEVERITY</b-form-checkbox></div>
+                              <div class="list-group-item"><b-form-checkbox value="INFO">INFO_SEVERITY</b-form-checkbox></div>
+                              <div class="list-group-item"><b-form-checkbox value="UNASSIGNED">UNASSIGNED_SEVERITY</b-form-checkbox></div>
                             </b-form-checkbox-group>
                           </div>
                         </b-form-group>
