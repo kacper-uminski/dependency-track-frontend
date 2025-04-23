@@ -219,11 +219,9 @@ export default {
                           <div class="list-group-item"><b-form-checkbox value="USER_DELETED">USER_DELETED</b-form-checkbox></div>
                         </b-form-checkbox-group>
                       </div>
-                    <div>
-                      Notifies: {{ notifyOn }}
-                    </div>
+
                       <div style="text-align:left">
-                        <b-form-group id="fieldset-7" :label="this.$t('NOTIFY_SEVERITIES')" label-for="input-7">
+                        <b-form-group id="fieldset-7" :label="this.$t('Severities')" label-for="input-7">
                           <div class="list-group" v-if="this.scope === 'PORTFOLIO' ">
                             <b-form-checkbox-group id="checkbox-group-severities" v-model="notifySeverities">
                               <div class="list-group-item"><b-form-checkbox value="LOW">LOW_SEVERITY</b-form-checkbox></div>
@@ -235,9 +233,6 @@ export default {
                             </b-form-checkbox-group>
                           </div>
                         </b-form-group>
-                        <div>
-                          Checked severities: {{ notifySeverities }}
-                        </div>
                       </div>
                     </b-form-group>
                     <div style="text-align:right">
