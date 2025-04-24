@@ -182,7 +182,25 @@
           <b-button variant="outline-primary" @click="suppressForAllProjects"
             >Yes</b-button
           >
-          <b-button variant="outline-danger" @click="$refs.confirmSuppression.hide()">No</b-button>
+          <b-button
+            variant="outline-danger"
+            @click="$refs.confirmSuppression.hide()"
+            >No</b-button
+          >
+        </div>
+      </b-modal>
+      <b-button @click="$refs.confirmUnSuppression.show()">Unsuppress all</b-button>
+      <b-modal ref="confirmUnSuppression" title="Confirm Unsuppression">
+        <p>Do you want to unsuppress the vulnerability in all projects?</p>
+        <div slot="modal-footer">
+          <b-button variant="outline-primary" @click="unSuppressForAllProjects"
+            >Yes</b-button
+          >
+          <b-button
+            variant="outline-danger"
+            @click="$refs.confirmUnSuppression.hide()"
+            >No</b-button
+          >
         </div>
       </b-modal>
       <b-row v-if="this.isPermitted(this.PERMISSIONS.VULNERABILITY_ANALYSIS)">
@@ -367,6 +385,17 @@ export default {
         true,
       );
     },
+    unSuppressForAllProjects() {
+      this.callRestEndpoint(
+        this.analysisState,
+        this.analysisJustification,
+        this.analysisResponse,
+        this.analysisDetails,
+        null,
+        false,
+        true,
+      );
+    },
     resolveVulnAliases: function (aliases, vulnSource) {
       return common.resolveVulnAliases(
         vulnSource ? vulnSource : this.source,
@@ -437,6 +466,7 @@ export default {
         this.suppressAllFlag = false;
       }
       this.$refs.confirmSuppression.hide();
+      this.$refs.confirmUnSuppression.hide();
     },
     makeAnalysis: function () {
       this.callRestEndpoint(
