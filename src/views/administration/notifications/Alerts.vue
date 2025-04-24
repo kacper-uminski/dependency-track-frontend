@@ -221,8 +221,8 @@ export default {
                       </div>
 
                       <div style="text-align:left">
-                        <b-form-group id="fieldset-7" :label="this.$t('Severities')" label-for="input-7">
-                          <div class="list-group" v-if="this.scope === 'PORTFOLIO' ">
+                        <b-form-group id="fieldset-7" :label="this.$t('Trigger notification on severities')" label-for="input-7">
+                          <div class="list-group" v-if="this.scope === 'PORTFOLIO' & this.publisherName==='Email' ">
                             <b-form-checkbox-group id="checkbox-group-severities" v-model="notifySeverities">
                               <div class="list-group-item"><b-form-checkbox value="LOW">LOW_SEVERITY</b-form-checkbox></div>
                               <div class="list-group-item"><b-form-checkbox value="MEDIUM">MEDIUM_SEVERITY</b-form-checkbox></div>
