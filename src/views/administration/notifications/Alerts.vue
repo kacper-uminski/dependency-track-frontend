@@ -397,8 +397,6 @@ export default {
                   })
                   .then((response) => {
                     this.alert = response.data;
-                    this.notifySeverities = this.alert.notifySeverities; // keep severities selected after refresh
-                    console.info('Severities updated: \${JSON.stringify(this.notifySeverities)}'); // simple log
                     this.destination = this.parseDestination(this.alert);
                     this.token = this.parseToken(this.alert);
                     this.tokenHeader = this.parseTokenHeader(this.alert);
