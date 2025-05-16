@@ -914,7 +914,16 @@
     "weakness": "Debolezza",
     "will_not_fix": "Non risolverà",
     "workaround_available": "Soluzione disponibile",
-    "x_trust_boundary": "Confine di fiducia incrociata"
+    "x_trust_boundary": "Confine di fiducia incrociata",
+    "apply": "Fare domanda a",
+    "bom_deleted": "Bom eliminato con successo",
+    "bulk_update": "Aggiornamento in blocco",
+    "delete_bom_tooltip": "Elimina BOM dal progetto.",
+    "no_bom_available": "Non esiste BOM per il progetto",
+    "no_projects_selected": "Nessun progetto selezionato",
+    "projects_selected": "progetti selezionati",
+    "remove_bom": "Rimuovi la casa",
+    "removing_dependencies": "Rimozione delle dipendenze, {n} a sinistra"
   },
   "operator": {
     "contains_all": "contiene tutto",

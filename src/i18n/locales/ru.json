@@ -914,7 +914,16 @@
     "weakness": "Слабость",
     "will_not_fix": "Не будет исправлено",
     "workaround_available": "Доступно обходное решение",
-    "x_trust_boundary": "Пересечение границы доверия"
+    "x_trust_boundary": "Пересечение границы доверия",
+    "apply": "Применять",
+    "bom_deleted": "Бом успешно удалил",
+    "bulk_update": "Насыпный обрыв",
+    "delete_bom_tooltip": "Удалить Бом из проекта.",
+    "no_bom_available": "Для проекта не существует.",
+    "no_projects_selected": "Никаких проектов не выбрано",
+    "projects_selected": "Проекты выбраны",
+    "remove_bom": "Удалить Бом",
+    "removing_dependencies": "Удаление зависимостей, {n} осталось"
   },
   "operator": {
     "contains_all": "содержит все",

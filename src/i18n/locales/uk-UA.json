@@ -914,7 +914,16 @@
     "weakness": "Слабкість",
     "will_not_fix": "Не виправить",
     "workaround_available": "Доступний обхідний шлях",
-    "x_trust_boundary": "Перетнути кордон довіри"
+    "x_trust_boundary": "Перетнути кордон довіри",
+    "apply": "Застосовувати",
+    "bom_deleted": "Бом успішно видалено",
+    "bulk_update": "Об'ємний",
+    "delete_bom_tooltip": "Видалити бом з проекту.",
+    "no_bom_available": "Для проекту не існує бом",
+    "no_projects_selected": "Жодних проектів не вибрано",
+    "projects_selected": "Вибрані проекти",
+    "remove_bom": "Видалити бом",
+    "removing_dependencies": "Видалення залежностей, {n} зліва"
   },
   "operator": {
     "contains_all": "містить усе",

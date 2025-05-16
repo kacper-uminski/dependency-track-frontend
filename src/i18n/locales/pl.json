@@ -914,7 +914,16 @@
     "weakness": "Słabość",
     "will_not_fix": "Nie naprawi",
     "workaround_available": "Dostępne obejście",
-    "x_trust_boundary": "Granica zaufania krzyżowego"
+    "x_trust_boundary": "Granica zaufania krzyżowego",
+    "apply": "Stosować",
+    "bom_deleted": "Bom pomyślnie usunięty",
+    "bulk_update": "Zakład",
+    "delete_bom_tooltip": "Usuń BOM z projektu.",
+    "no_bom_available": "Nie ma BOM dla projektu",
+    "no_projects_selected": "Nie wybrano projektów",
+    "projects_selected": "Wybrane projekty",
+    "remove_bom": "Usuń bom",
+    "removing_dependencies": "Usuwanie zależności, {n} lewe"
   },
   "operator": {
     "contains_all": "zawiera wszystko",

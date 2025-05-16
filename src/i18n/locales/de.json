@@ -914,7 +914,16 @@
     "weakness": "Schwäche",
     "will_not_fix": "Wird nicht repariert",
     "workaround_available": "Problemumgehung verfügbar",
-    "x_trust_boundary": "Vertrauensgrenze überschreiten"
+    "x_trust_boundary": "Vertrauensgrenze überschreiten",
+    "apply": "Anwenden",
+    "bom_deleted": "Bom erfolgreich gelöscht",
+    "bulk_update": "Bulk-Update",
+    "delete_bom_tooltip": "Bom aus dem Projekt löschen.",
+    "no_bom_available": "Für das Projekt gibt es keine BOM",
+    "no_projects_selected": "Keine Projekte ausgewählt",
+    "projects_selected": "Projekte ausgewählt",
+    "remove_bom": "Bom entfernen",
+    "removing_dependencies": "Abhängigkeiten entfernen, {n} links"
   },
   "operator": {
     "contains_all": "enthält alle",

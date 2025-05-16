@@ -914,7 +914,16 @@
     "weakness": "Fraqueza",
     "will_not_fix": "Não irá corrigir",
     "workaround_available": "Solução alternativa disponível",
-    "x_trust_boundary": "Limite de confiança cruzada"
+    "x_trust_boundary": "Limite de confiança cruzada",
+    "apply": "Aplicar",
+    "bom_deleted": "Bom excluído com sucesso",
+    "bulk_update": "Update em massa",
+    "delete_bom_tooltip": "Exclua o BOM do projeto.",
+    "no_bom_available": "Não existe bom para o projeto",
+    "no_projects_selected": "Nenhum projeto selecionado",
+    "projects_selected": "projetos selecionados",
+    "remove_bom": "Remova o BOM",
+    "removing_dependencies": "Removendo dependências, {n} à esquerda"
   },
   "operator": {
     "contains_all": "contém tudo",

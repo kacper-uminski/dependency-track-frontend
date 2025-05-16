@@ -914,7 +914,16 @@
     "weakness": "Faiblesse",
     "will_not_fix": "Ne sera pas corrigée",
     "workaround_available": "Solution de contournement disponible",
-    "x_trust_boundary": "Limte de confiance mutuelle"
+    "x_trust_boundary": "Limte de confiance mutuelle",
+    "apply": "Appliquer",
+    "bom_deleted": "Bom avec succès supprimé",
+    "bulk_update": "Mettre à jour",
+    "delete_bom_tooltip": "Supprimer la bom du projet.",
+    "no_bom_available": "Aucune nomination n'existe pour le projet",
+    "no_projects_selected": "Aucun projet sélectionné",
+    "projects_selected": "Projets sélectionnés",
+    "remove_bom": "Retirer la nomenclature",
+    "removing_dependencies": "Supprimer les dépendances, {n} gauche"
   },
   "operator": {
     "contains_all": "contient tous",

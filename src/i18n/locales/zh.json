@@ -914,7 +914,16 @@
     "weakness": "弱点",
     "will_not_fix": "不会修复",
     "workaround_available": "有解决方法",
-    "x_trust_boundary": "跨越信任边界"
+    "x_trust_boundary": "跨越信任边界",
+    "apply": "申请",
+    "bom_deleted": "Bom成功删除了",
+    "bulk_update": "散装",
+    "delete_bom_tooltip": "从项目中删除bom。",
+    "no_bom_available": "项目不存在BOM",
+    "no_projects_selected": "没有选择项目",
+    "projects_selected": "选择的项目",
+    "remove_bom": "删除BOM",
+    "removing_dependencies": "删除依赖项，{n}左"
   },
   "operator": {
     "contains_all": "包含全部",
